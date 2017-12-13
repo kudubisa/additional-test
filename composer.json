@@ -1,0 +1,15 @@
+{
+    "name": "root/mytest",
+    "description": "this is the test",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Heri Andria Herdiana",
+            "email": "andryavera@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "^2.6.3",
+        "twig/twig": "2.4.4"
+    }
+}
