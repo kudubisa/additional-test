@@ -13,7 +13,16 @@ $loader = new Twig_Loader_Filesystem("./templates");
 $twig = new Twig_Environment($loader);
 
 $app->get("/", function () use ($app, $twig) {
+    $layout = $twig->load("layout.html");
+    echo $layout->render();
+});
 
+$app->get("/one", function () use ($app, $twig) {
+    $layout = $twig->load("one.html");
+    echo $layout->render();
+});
+
+$app->get("/generate_json", function () use ($app) {
     $src = array(
         "header_menu" => array(
             "hosting",
@@ -51,7 +60,15 @@ $app->get("/", function () use ($app, $twig) {
         "company_address" => "Jl. Selokan Mataram Monjali Karangjati MT I/304 Sinduadi, Mlati, Sleman Yogyakarta 55284"
     );
 
-    echo json_encode($src);
+    $res = $app->response;
+
+    $res->headers->set("Content-Type", "application/json");
+    $res->write(json_encode($src));
+
+});
+
+$app->get("/home", function () use ($app, $twig) {
+    echo $twig->display("my_layout.html");
 });
 
 

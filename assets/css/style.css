@@ -1,0 +1,85 @@
+@font-face {
+    font-family: RobotoBlack;
+    src: url(../fonts/roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: RobotoBlack;
+    src: url(../fonts/roboto/Roboto-BlackItalic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-Italic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-Light.ttf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/roboto/Montserrat-Regular.otf);
+}
+
+
+body{
+    font-family: Roboto;
+    font-weight: light;
+    font-size: 0.875em;
+}
+
+.clearfix{
+    overflow: auto;
+}
+
+.top-nav{
+    border: 1px solid green;
+    padding: 0;
+    padding: 5px 0px;
+
+}
+
+.container-fluid{
+    border-bottom: 1px solid lightgrey;
+    padding: 0px 100px;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}
+
+.tiny{
+    font-size: 1.3rem;
+}
