@@ -1,0 +1,36 @@
+{
+  "header_menu": [
+    "hosting",
+    "domain",
+    "server",
+    "website",
+    "affiliasi",
+    "promo",
+    "pembayaran",
+    "review",
+    "kontak",
+    "blog"
+  ],
+  "footer_menu": {
+    "layanan": [
+      "Domain",
+      "Shared Hosting",
+      "Cloud VPS Hosting",
+      "Managed VPS Hosting",
+      "Web Builder",
+      "Keamanan SSL / HTTPS",
+      "Jasa Pembuatan Website",
+      "Program Affiliasi"
+    ],
+    "Service Hosting": [
+      "Hosting Murah",
+      "Hosting Indonesia",
+      "Hosting Singapura SG",
+      "Hosting PHP",
+      "Hosting Wordpress",
+      "Hosting Laravel"
+    ]
+  },
+  "phone_number": "0274-5305505",
+  "company_address": "Jl. Selokan Mataram Monjali Karangjati MT I/304 Sinduadi, Mlati, Sleman Yogyakarta 55284"
+}
