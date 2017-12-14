@@ -71,5 +71,13 @@ $app->get("/home", function () use ($app, $twig) {
     echo $twig->display("my_layout.html");
 });
 
+$app->get("/learn1", function () use ($app, $twig) {
+    echo $twig->display("learn1.html");
+});
+
+$app->get("/learn2", function () use ($app, $twig) {
+    echo $twig->display("learn2.html");
+});
+
 
 $app->run();
