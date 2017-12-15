@@ -18,8 +18,7 @@ $app->get("/", function () use ($app, $twig) {
 });
 
 $app->get("/one", function () use ($app, $twig) {
-    $layout = $twig->load("one.html");
-    echo $layout->render();
+    echo $twig->display("layout.html");
 });
 
 $app->get("/generate_json", function () use ($app) {

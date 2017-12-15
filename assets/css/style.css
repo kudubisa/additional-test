@@ -37,112 +37,135 @@
     src: url(../fonts/roboto/Montserrat-Regular.otf);
 }
 
-
 body{
     font-family: Roboto;
-    font-weight: light;
-    font-size: 1em;
 }
 
-.clearfix{
-    overflow: auto;
-}
-
-.top-nav{
-    border: 1px solid green;
+/* p{
     padding: 0;
-    padding: 5px 0px;
-
-}
-
-.container-fluid{
-    border-bottom: 1px solid lightgrey;
-    padding: 0px 100px;
-}
-
-/* unvisited link */
-a:link {
-    color: black;
-}
-
-/* visited link */
-a:visited {
-    color: black;
-}
-
-/* mouse over link */
-a:hover {
-    color: grey;
-}
-
-/* selected link */
-a:active {
-    color: #0000FF;
-}
-
-.tiny{
-    font-size: 1.3rem;
-}
-
-#nav-bar {
-    float: right;
-    display: inline-block;
-    list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid red;
-    /*background-color: white;*/
-    vertical-align: center;
+} */
+
+.navbar-inverse .container-fluid{
+    width: 80%;
 }
 
-#nav-bar li {
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #fff;
+    color: #424242;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.navbar-brand{
     float: left;
-    border: 1px solid grey;
-
+    min-height: 55px;
+    padding: 0 15px 5px;
 }
 
-#nav-bar li a, .dropbtn {
-    display: inline-block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
+.navbar-brand img{
+    max-width: 180px;
+}
+
+.btn-bar{
+    padding: 5px 10px;
+    border: 1px solid #212121;
+    color: #212121;
+    font-size: 15px;
+}
+
+.btn-bar:visited, .btn-bar:active, .btn-bar:link, .btn-bar:hover{
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav li a{
+    color: #616161;
+    font-size: 0.95em;
+} 
+
+.navbar-inverse .navbar-nav li a:hover{
+    color: #212121;
+} 
+
+
+
+.navbar-inverse .navbar-nav .active a, 
+.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover{
+    color: #212121;
+    background: #fff;
+}
+
+.share-social{
+    margin:0;
+    padding:0;
+    background-color: #f5f5f5;
+}
+
+.share-social .container .col-md-6 p,
+.share-social .container .col-md-6 a{ 
+    margin:0;
+    padding: 15px 0px;
+}
+
+.share-social .container .col-md-6 a{ 
+    font-size: 25px;
     text-decoration: none;
 }
 
-#nav-bar li:last-child a {
-    padding-right: 5px;
+.bantuan{
+    background-color: #0091EA;
+    padding: 25px 0px;
 }
 
-
-#nav-bar li a:hover, .dropdown:hover .dropbtn {
-    /*background-color: red;*/
-    color: #00afe5;
+#heading-bantuan h3{
+    margin:0;
+    padding: 0;
+    color:#fff;
 }
 
-#nav-bar li.dropdown {
-    display: inline-block;
+#bantuan-chat a{
+    color:#fff; 
+    font-size: 15px;
+    border: 1px solid #fff;
+    padding: 2px 30px;
+    border-radius: 15px;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.section4{
+    background-color: #212121;
+    color: #f5f5f5;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+@media(max-width:768px){
+    .navbar-inverse .container-fluid{
+        width: 100%;
+    }
+    #MyNavbar{
+        background-color: #e0e0e0;
+    }
+    .navbar-inverse .navbar-nav .active a, 
+    .navbar-inverse .navbar-nav .active a:focus,
+    .navbar-inverse .navbar-nav .active a:hover{
+        background: #e0e0e0;
+    }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+    #heading-bantuan{
+        text-align: center;
+        padding: 10px 0px;
+    }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+    #heading-bantuan h3{
+        font-size: 15px;
+    }
+
+    #bantuan-chat{
+        text-align: center;
+        padding: 10px 0px;
+    }
+
 }
