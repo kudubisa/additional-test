@@ -13,8 +13,7 @@ $loader = new Twig_Loader_Filesystem("./templates");
 $twig = new Twig_Environment($loader);
 
 $app->get("/", function () use ($app, $twig) {
-    $layout = $twig->load("layout.html");
-    echo $layout->render();
+    echo $twig->display("layout.html");
 });
 
 $app->get("/one", function () use ($app, $twig) {
