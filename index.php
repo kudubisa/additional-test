@@ -79,5 +79,12 @@ $app->get("/learn2", function () use ($app, $twig) {
     echo $twig->display("learn2.html");
 });
 
+$app->get("/learn3", function () use ($app, $twig) {
+    echo $twig->display("learn3.html");
+});
+
+$app->get("/learn4", function () use ($app, $twig) {
+    echo $twig->display("learn4.html");
+});
 
 $app->run();
