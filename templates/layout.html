@@ -36,17 +36,6 @@
             </div>
             <div class="collapse navbar-collapse" id="MyNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- <li class="active"><a href="#">Hosting</a></li> -->
-                    <!-- <li><a href="#">Domain</a></li>
-                    <li><a href="#">Server</a></li>
-                    <li><a href="#">Website</a></li>
-                    <li><a href="#">Affiliasi</a></li>
-                    <li><a href="#">Promo</a></li>
-                    <li><a href="#">Pembayaran</a></li>
-                    <li><a href="#">Review</a></li>
-                    <li><a href="#">Kontak</a></li>
-                    <li><a href="#">Blog</a></li> -->
-
                     {% for hm in header_menu  %}
                         <li><a href="#">{{ hm }}</a></li>
                     {% endfor  %}
@@ -112,13 +101,6 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <h5>LAYANAN</h5>
                     <ul class="my-list" id="layanan">
-                        <!-- <li class="layanan-item"><a href="#">Domain</a></li>
-                        <li class="layanan-item"><a href="#">Shared Hosting</a></li>
-                        <li class="layanan-item"><a href="#">Cluod VPS Hosting</a></li>
-                        <li class="layanan-item"><a href="#">Web Builder</a></li>
-                        <li class="layanan-item"><a href="#">Keamanan SSL / HTTPS</a></li>
-                        <li class="layanan-item"><a href="#">Jasa Pembuatan Website</a></li>
-                        <li class="layanan-item"><a href="#">Program Affiliasi</a></li> -->
                         {% for list in footer_menu.layanan %}
                             <li class="layanan-item"><a href="#">{{ list }}</a></li>
                         {% endfor %}
@@ -127,12 +109,6 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <h5>SERVICE HOSTING</h5>
                     <ul class="my-list" id="service-hosting">
-                        <!-- <li class="layanan-item"><a href="#">Hosting Murah</a></li>
-                        <li class="layanan-item"><a href="#">Hosting Indonesia</a></li>
-                        <li class="layanan-item"><a href="#">Hosting Singapura SG</a></li>
-                        <li class="layanan-item"><a href="#">Hosting PHP</a></li>
-                        <li class="layanan-item"><a href="#">Hosting Wordpress</a></li>
-                        <li class="layanan-item"><a href="#">Hosting Laravel</a></li> -->
                         {% for list in footer_menu.service_hosting %}
                             <li class="service-hosting-item"><a href="#">{{ list }}</a></li>
                         {% endfor %}
@@ -141,9 +117,6 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <h5>TUTORIAL</h5>
                     <ul class="my-list" id="service-hosting">
-                        <!-- <li class="layanan-item"><a href="#">Knowledgebase</a></li>
-                        <li class="layanan-item"><a href="#">Blog</a></li>
-                        <li class="layanan-item"><a href="#">Cara Pembayaran</a></li> -->
                         {% for list in footer_menu.tutorial %}
                             <li class="tutorial-item"><a href="#">{{ list }}</a></li>
                         {% endfor %}
@@ -155,11 +128,6 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <h5>TENTANG KAMI</h5>
                     <ul class="my-list" id="about">
-                        <!-- <li class="layanan-item"><a href="#">Tim Niagahoster</a></li>
-                        <li class="layanan-item"><a href="#">Karir</a></li>
-                        <li class="layanan-item"><a href="#">Events</a></li>
-                        <li class="layanan-item"><a href="#">Penawaran &mamp; Promo Spesial</a></li>
-                        <li class="layanan-item"><a href="#">Kontak Kami</a></li> -->
                         {% for list in footer_menu.tentang_kami %}
                             <li class="tentang-item"><a href="#">{{ list }}</a></li>
                         {% endfor %}
@@ -168,11 +136,6 @@
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <h5>KENAPA PILIH NIAGA HOSTER</h5>
                     <ul class="my-list" id="why-us">
-                        <!-- <li class="layanan-item"><a href="#">Support Terbaik</a></li>
-                        <li class="layanan-item"><a href="#">Garansi Harga Termurah</a></li>
-                        <li class="layanan-item"><a href="#">Domain Gratis Selamanya</a></li>
-                        <li class="layanan-item"><a href="#">Datacenter Hosting Terbaik</a></li>
-                        <li class="layanan-item"><a href="#">Review Pelanggan</a></li> -->
                         {% for list in footer_menu.kenapa_kami %}
                             <li class="kenapa-item"><a href="#">{{ list }}</a></li>
                         {% endfor %}
@@ -199,15 +162,6 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h5>PEMBAYARAN</h5>
                     <div class="flex-container">
-                        <!-- <img src="assets/svg/payment_method/logo-bca-bordered.svg" class="payment img-responsive">
-                        <img src="assets/svg/payment_method/mandiriclickpay.svg" class="payment img-responsive">
-                        <img src="assets/svg/payment_method/logo-bni-bordered.svg" class="payment img-responsive">
-                        <img src="assets/svg/payment_method/visa.svg" class="payment img-responsive">
-                        <img src="assets/svg/payment_method/mastercard.svg" class="payment img-responsive">
-                        <img src="assets/svg/payment_method/atmbersama.svg" class="payment img-responsive">
-                        <img src="assets/svg/payment_method/permatabank.svg" class="payment img-responsive">
-                        <img src="assets/svg/payment_method/prima.svg" class="payment img-responsive">
-                        <img src="assets/svg/payment_method/alto.svg" class="payment img-responsive"> -->
                         {% for list in footer_menu.pembayaran %}
                             <img src="assets/svg/payment_method/{{ list }}.svg" class="payment img-responsive">
                         {% endfor %}
@@ -241,7 +195,6 @@ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = 
             $('.btn-bantuan-chat').click(function(e){
                 e.preventDefault();
                 jivo_api.open();
-                // alert("hello");
             });
         });
     </script>
