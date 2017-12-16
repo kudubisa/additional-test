@@ -429,6 +429,10 @@ h5{
         float: none;
     }
 
+    #top-nav p a{
+        font-size: 10px;
+    }
+
     #top-nav p{
         margin-left: 8px;
         display: inline-block;
@@ -512,7 +516,7 @@ h5{
 
     #footer #syarat p{
         float: none;
-        margin-bottom: 20px;
+        margin-bottom: 80px;
     }
 
     .hr-black{
