@@ -69,6 +69,11 @@ body{
     border-bottom: 1px solid #E0E0E0;
 }
 
+#NavToggle:hover{
+    color: #fff;
+    background-color: #424242;
+}
+
 .navbar-brand{
     float: left;
     min-height: 55px;
@@ -93,6 +98,7 @@ body{
 .navbar .navbar-nav li a{
     color: #616161;
     font-size: 0.95em;
+    text-transform: capitalize;
 }
 
 .navbar .navbar-nav li a:hover{
@@ -149,6 +155,7 @@ body{
 
 #top-nav ul li:hover a{
     color: #9e9e9e;
+    cursor: pointer;
 }
 
 #top-nav ul li a{
@@ -263,6 +270,7 @@ body{
 #bantuan-chat a:hover{
     color: #0091EA;
     background-color: #fff;
+    cursor: pointer;
 }
 
 
@@ -301,6 +309,7 @@ h5{
 .my-list li a{
     text-decoration: none;
     color: #bdbdbd;
+    text-transform: capitalize;
 }
 
 .my-list li a:hover{
@@ -372,14 +381,28 @@ h5{
     color: #00E676;
 } /*end of row2*/
 
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
 
-.payment{
+.flex-container>img {
+    display: inline-block;
+    max-height: 40px;
+    width: auto;
+    color: #9e9e9e;
+    margin: 10px 10px;
+    text-align: center;
+}
+
+/*.payment{
     display: inline-block;
     height: 35px;
     width: auto;
     padding-right: 10px;
     color: #9e9e9e;
-}
+}*/
 
 .payment:last-child{
     padding-right: 0px;
@@ -508,3 +531,6 @@ h5{
         margin-left: 0px;
     }
 }
+
+
+

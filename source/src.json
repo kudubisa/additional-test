@@ -22,13 +22,44 @@
       "Jasa Pembuatan Website",
       "Program Affiliasi"
     ],
-    "Service Hosting": [
+    "service_hosting": [
       "Hosting Murah",
       "Hosting Indonesia",
       "Hosting Singapura SG",
       "Hosting PHP",
       "Hosting Wordpress",
       "Hosting Laravel"
+    ],
+    "tutorial": [
+      "knowledgebase",
+      "blog",
+      "cara pembayaran"
+    ],
+    "tentang_kami": [
+      "tim niagahoster",
+      "karir",
+      "events",
+      "Hosting PHP",
+      "penawaran & promo spesial",
+      "kontak kami"
+    ],
+    "kenapa_kami": [
+      "support terbaik",
+      "garansi harga termurah",
+      "domain gratis selamanya",
+      "datacenter hosting terbaik",
+      "review pelanggan"
+    ],
+    "pembayaran": [
+        "logo-bca-bordered",
+        "mandiriclickpay",
+        "logo-bni-bordered",
+        "visa",
+        "mastercard",
+        "atmbersama",
+        "permatabank",
+        "prima",
+        "alto"
     ]
   },
   "phone_number": "0274-5305505",
